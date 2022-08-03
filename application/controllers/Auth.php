@@ -28,6 +28,13 @@ class Auth extends CI_Controller {
 
 	}
 
+	public function signup()
+	{	
+
+		$this->load->view("backend-web/root/signup");
+
+	}
+
 	public function signin()
 	{	
 
@@ -73,19 +80,19 @@ class Auth extends CI_Controller {
                     } else if($data[0]->id_backend_groups == "2"){
 
                         $this->session->set_flashdata('alert_success', 'Your sign in date is : '.$flashDate);
-                        redirect(base_url().'Manajemen/B_dashboard');
+                        redirect(base_url().'Admin/B_verifikasi');
                         die();
 
                     } else if($data[0]->id_backend_groups == "3"){
 
                         $this->session->set_flashdata('alert_success', 'Your sign in date is : '.$flashDate);
-                        redirect(base_url().'Petugas/B_dashboard');
+                        redirect(base_url().'Admin/B_subwil');
                         die();
 
-                    } else if($data[0]->id_backend_groups == "5"){
+                    } else if($data[0]->id_backend_groups == "4"){
 
                         $this->session->set_flashdata('alert_success', 'Your sign in date is : '.$flashDate);
-                        redirect(base_url().'General_Ledger/B_dashboard');
+                        redirect(base_url().'Kontraktor/B_kontraktor');
                         die();
 
                     } else if($data[0]->id_backend_groups == "6"){

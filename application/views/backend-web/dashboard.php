@@ -54,7 +54,7 @@
 			</div>
 		  </div>
 		  <div class="form-group" style="margin-left:15px;margin-top:10px">
-			<label for="exampleInputFile" style="color:blue">2. Dokumen Kontrak Awal
+			<label for="exampleInputFile" style="color:blue">2. Explanatory Note
 			</label>
 			<div class="input-group" style="margin-bottom:-40px">
 				<input class=" form-control" type="text"/>
@@ -65,7 +65,7 @@
 			</div>
 		  </div>
 		  <div class="form-group" style="margin-left:15px;margin-top:10px">
-			<label for="exampleInputFile" style="color:blue">3. Kurva S
+			<label for="exampleInputFile" style="color:blue">3. Surat Perjanjian Kontrak
 			</label>
 			<div class="input-group" style="margin-bottom:-40px">
 				<input class=" form-control" type="text"/>
@@ -76,7 +76,7 @@
 			</div>
 		  </div>
 		  <div class="form-group" style="margin-left:15px;margin-top:10px">
-			<label for="exampleInputFile" style="color:blue">4. Laporan Progres Mingguan dari Awal hingga Pengajuan Permohonan Perpanjangan Waktu
+			<label for="exampleInputFile" style="color:blue">4. Berita Acara Pania Peneli Pelaksana Kontrak
 
 
 			</label>
@@ -88,39 +88,7 @@
 				</div>
 			</div>
 		  </div>
-		  <div class="form-group" style="margin-left:15px;margin-top:10px">
-			<label for="exampleInputFile" style="color:blue">5. Dokumentasi Progres Mingguan dari Awal Hingga Pengajuan Permohonan Perpanjangan Waktu 
-			</label>
-			<div class="input-group" style="margin-bottom:-40px">
-				<input class=" form-control" type="text"/>
-				<div class="input-group-btn">
-					<label for="files" class="btn btn-primary" style="border-radius:3px">browse</label>
-					<input id="files" type="file" class="btn btn-default"  style="visibility:hidden;"/>
-				</div>
-			</div>
-		  </div>
-		  <div class="form-group" style="margin-left:15px;margin-top:10px">
-			<label for="exampleInputFile" style="color:blue">6. Surat Usulan Permohonan Perpanjangan Waktu dari Kontraktor
-			</label>
-			<div class="input-group" style="margin-bottom:-40px">
-				<input class=" form-control" type="text"/>
-				<div class="input-group-btn">
-					<label for="files" class="btn btn-primary" style="border-radius:3px">browse</label>
-					<input id="files" type="file" class="btn btn-default"  style="visibility:hidden;"/>
-				</div>
-			</div>
-		  </div>
-		  <div class="form-group" style="margin-left:15px;margin-top:10px">
-			<label for="exampleInputFile" style="color:blue">7. Justifikasi Teknis Konsultan
-			</label>
-			<div class="input-group" style="margin-bottom:-40px">
-				<input class=" form-control" type="text"/>
-				<div class="input-group-btn">
-					<label for="files" class="btn btn-primary" style="border-radius:3px">browse</label>
-					<input id="files" type="file" class="btn btn-default"  style="visibility:hidden;"/>
-				</div>
-			</div>
-		  </div>
+		  
 		  <div class="row" style="margin-left:15px;margin-top:10px">
 		  <div class="input-field col clearfix" style="
     float: right;

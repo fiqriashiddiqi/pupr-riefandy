@@ -43,7 +43,7 @@
   <link href="<?php echo base_url();?>assets/materialize/js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
   
 </head>
-<body class="darkbrown" style="background-color:transparent!important">
+<body class="" style="background-color:transparent!important">
 
 
   <!-- Start Page Loading -->
@@ -53,62 +53,70 @@
       <div class="loader-section section-right"></div>
   </div>
   <!-- End Page Loading -->
-  <div id="login-page" class="row">
-    <div id="default-validation" class="col s12 z-depth-4 card-panel" style="opacity:80%;border: 2px solid blue; border-radius: 27px;">    
-      <form class="login-form" action="<?php echo base_url(); ?>Auth/signin" method="post" enctype="multipart/form-data">
+  <div id="" class="row">
+    <div id="default-validation" class="col s6 z-depth-4 card-panel" style="opacity:80%;border: 2px solid blue; border-radius: 27px;margin:20px">    
+      <form class="login-form" action="" method="post" enctype="multipart/form-data" style="width:100%">
         <div class="row">
           <div class="input-field col s12 center">
-            <img src="<?php echo base_url() ?>uploads/base-img/logo-pu.png" alt="" style="width: 65%;">
-            <p class="center login-form-text" style="font-size: 12px;font-weight: bold;color: blue;">SISTEM INFORMASI REKOMENDASI
-TEKNIS PERPANJANGAN WAKTU
-SIREPERTU</p>
-<p class="center login-form-text" style="font-size: 12px;font-weight: bold;color: black;">SUBDIREKTORAT WILAYAH III (TIGA)
-DIREKTORAT SUNGAI DAN PANTAI</p>
+            <img src="<?php echo base_url() ?>uploads/base-img/pic.png" alt="" style="width: 70%;">
+            
           </div>
         </div>
 
-        <?php if ($this->session->flashdata('alert_success')) { ?>
-        <div id="card-alert" class="card green">
-          <div class="card-content white-text">
-            <p><?php echo $this->session->flashdata('alert_success'); ?></p>
-          </div>
-          <button type="button" class="close white-text" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <?php } ?>
+        
 
-        <?php if ($this->session->flashdata('alert_error')) { ?>
-        <div id="card-alert" class="card red">
-          <div class="card-content white-text">
-            <p><?php echo $this->session->flashdata('alert_error'); ?></p>
-          </div>
-          <button type="button" class="close white-text" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <?php } ?>
-
+      </form>
+      
+    </div>
+    <div id="default-validation" class="col s4 z-depth-4 card-panel" style="opacity:80%;border: 2px solid blue; border-radius: 27px;margin:20px">    
+      <form class="login-form" action="" method="post" enctype="multipart/form-data" style="width:100%">
         <div class="row">
+          <div class="input-field col s12 center">
+            <img src="<?php echo base_url() ?>uploads/base-img/logo-pu.png" alt="" style="width: 47%;">
+            <p class="center login-form-text" style="font-size: 12px;font-weight: bold;color: blue;">SELAMAT DATANG</p>
+              <p class="center login-form-text" style="font-size: 12px;font-weight: bold;color: black;">SISTEM INFORMASI WILAYAH III</p>
+          </div>
+        </div>
+
+        <div class="row" style="margin-bottom:0px">
+          <div class="input-field col s12">
+            <i class="mdi-social-person-outline prefix"></i>
+            <input id="username" name="users_username" type="text" class="validate" minlength="4" required="true">
+            <label for="username" data-error="Minimal 4 karakter">Nama Lengkap</label>
+          </div>
+        </div>
+        <div class="row" style="margin-bottom:0px">
           <div class="input-field col s12">
             <i class="mdi-communication-email prefix"></i>
             <input id="username" name="users_username" type="email" class="validate" minlength="4" required="true">
             <label for="username" data-error="Format Email Salah">Email</label>
           </div>
         </div>
-        <div class="row">
+        <div class="row" style="margin-bottom:0px">
+          <div class="input-field col s12">
+            <i class="mdi-social-location-city prefix"></i>
+            <input id="username" name="users_username" type="text" class="validate" minlength="4" required="true">
+            <label for="username" data-error="Minimal 4 karakter">Asal Instansi</label>
+          </div>
+        </div>
+        <div class="row" style="margin-bottom:0px">
+          <div class="input-field col s12">
+            <i class="mdi-action-lock-outline prefix"></i>
+            <input id="username" name="users_username" type="password" class="validate" minlength="4" required="true">
+            <label for="username" data-error="Minimal 8 karakter">Kata Sandi</label>
+          </div>
+        </div>
+        <div class="row" style="margin-bottom:0px">
           <div class="input-field col s12">
             <i class="mdi-action-lock-outline prefix"></i>
             <input id="password" name="users_password" type="password" class="validate" minlength="8" required="true">
-            <label for="password" data-error="Minimal 8 karakter">Password</label>
+            <label for="password" data-error="Minimal 8 karakter">Kata Sandi</label>
           </div>
         </div>
-        <div class="row" style="margin-left:10%">
+        <div class="row" style="margin-left:33%">
+          
           <div class="input-field col">
-            <button type="submit" class="btn waves-effect waves-light col s12" style="background-color: blue;">Sign In</button>
-          </div>
-          <div class="input-field col">
-            <a href="<?php echo site_url('auth/signup') ?>" class="btn btn-primary" style="background-color: #0000ff;">Sign Up</a>
+            <a href="<?php echo site_url('auth/') ?>" class="btn btn-primary" style="background-color: #0000ff;">Sign Up</a>
             <!-- <button type="submit" class="btn waves-effect waves-light col s12" style="background-color: blue;">Sign Up</button> -->
           </div>
         </div>
@@ -119,8 +127,11 @@ DIREKTORAT SUNGAI DAN PANTAI</p>
         </div> -->
 
       </form>
+      
     </div>
   </div>
+  
+  
 
   <!-- ================================================
     Scripts

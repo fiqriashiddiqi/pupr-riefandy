@@ -4,12 +4,11 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        <?php echo $title; ?>
+      VERIFIKASI PERSETUJUAN REKOMENDASI TEKNIS PERPANJANGAN WAKTU
         <small></small>
       </h1>
-      <ol class="breadcrumb">
-        <li class="active"><a href="<?php echo $brd_title_url; ?>"><i class="fa fa-dashboard"></i> <?php echo $brd_title_main; ?></a></li>
-      </ol>
+      <p>Proyek Test 1<br>04/08/2022</p>
+      
     </section>
 
     <!-- Main content -->
@@ -31,21 +30,7 @@
                 <?php echo $this->session->flashdata('alert_error'); ?></p>
                 </div>
                 <?php } ?>
-          <div class="box">
-            <div class="box-header with-border">
-              <div class="row">
-                
-                
-              
-              <div class="col-lg-6 col-xs-12">
-              </div>
-              <div class="col-lg-6 col-xs-12 text-right">
-              <!-- <a href="#" data-toggle="collapse" data-target="#filter_users" class="btn-warning btn-sm btn">Filters</a> -->
-              <a href="<?php echo $create_url; ?>" class="btn-primary btn-sm btnbig2 btn">Tambah Tempat</a>
-              </div>
-              </div>
-            </div>
-          </div>
+          
 
           <!-- <div class="box collapse" id="filter_users">
             <div class="box-header with-border">
@@ -93,103 +78,126 @@
                 <thead>
                 <tr>
                   <th>No</th>
-                  <th>Kode Tempat</th>
-                  <th>Nama Tempat</th>
-                  <th width="180" style="text-align: center;">Action</th>
+                  <th style="text-align: center;">Dokumen</th>
+                  <th style="text-align: center;">Status</th>
+                  <th width="180" style="text-align: center;">Keterangan</th>
                 </tr>
                 </thead>
                 <tbody>
-
-                  <?php
-                    $this->load->model("crud_model");
-                    //$data_setting = $this->crud_model->get_setting();
-                    $limit   = 10;
-                    $page = isset($_REQUEST['page']) ? $_REQUEST['page'] : null;
-
-                    
-                    if(empty($page)){
-                        $position  = 0;
-                        $page = 1;
-                    } else {
-                        $position = ($page-1) * $limit;
-                    }
-
-                    $this->load->model('Website/tempat_model');
-                    $data_tempat = $this->tempat_model->get_tempat_list()->result();
-                    $no = $position+1;
-                       foreach ($data_tempat as $tempat_entry){
-                   
-                ?>
         
                 <tr>
-                  <td><?php echo $no; ?></td>
-                  <td><?php echo $tempat_entry->kd_tempat; ?></td>
-                  <td><?php echo $tempat_entry->nama_tempat; ?></td>
-                  <!-- -->
-                  
+                  <td>1.</td>
+                  <td>Surat Pengajuan Permohonan Rekomendasi Teknis Perpanjangan Waktu</td>
+                  <td>
+                    <center>
+                    <select class="form-control btn-primary" style="width:80%;border-radius:10px;text-align:center">
+                      <option value=1>Ada</option>
+                      <option value=0>Tdk Ada</option>
+                    </select>
+                    </center>
+
+                  </td>
                   
                   <td class="text-center">
-                    <?php                     
-                    if ($tempat_entry->tempat_access_status == "Activated"){
-                    ?>
-
-                      <input type="checkbox" name="users_access_status" onchange="loaddata(<?php echo $tempat_entry->id_tempat_bayar; ?>)" checked data-toggle="toggle" value="">
-                    
-  
-                    <?php
-                    } else {
-                    ?>
-
-                      <input type="checkbox" name="users_access_status" onchange="loaddata(<?php echo $tempat_entry->id_tempat_bayar; ?>)" data-toggle="toggle" value="">
-
-                    <?php
-                    }
-                    ?>
-                    <a href="<?php echo $update_url; ?>/<?php echo $tempat_entry->id_tempat_bayar; ?>" id="edit" class="btn btn-info btn-sm btnwdt">Detail</a>
-
-                     <a href="#" id="delete" onclick="delete_data(<?php echo $tempat_entry->id_tempat_bayar; ?>)" class="btn-danger btn-sm btn btnwdt" >Delete</a>
-  
-
-                   <!--  <a href="<?php echo $delete_url; ?>/<?php echo $users_entry->id_backend_users; ?>" id="delete" onclick="return confirm('Are you sure to delete this  ?')" class="btn-danger btn-sm btn btnwdt">Delete</a> -->
+                    <center>
+                    <select class="form-control btn-primary" style="width:55%;border-radius:10px;text-align:center">
+                      <option value=1>Ok</option>
+                      <option value=0>Tdk Ok</option>
+                    </select>
+                    </center>
                   </td>
                 </tr>
-                <?php
-                $no++;
-                 } ?>
+                <tr>
+                  <td>2.</td>
+                  <td>Explanatory Note</td>
+                  <td>
+                    <center>
+                    <select class="form-control btn-primary" style="width:80%;border-radius:10px;text-align:center">
+                      <option value=1>Ada</option>
+                      <option value=0>Tdk Ada</option>
+                    </select>
+                    </center>
+
+                  </td>
+                  
+                  <td class="text-center">
+                    <center>
+                    <select class="form-control btn-primary" style="width:55%;border-radius:10px;text-align:center">
+                      <option value=1>Ok</option>
+                      <option value=0>Tdk Ok</option>
+                    </select>
+                    </center>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3.</td>
+                  <td>Surat Perjanjian Kontrak</td>
+                  <td>
+                    <center>
+                    <select class="form-control btn-primary" style="width:80%;border-radius:10px;text-align:center">
+                      <option value=1>Ada</option>
+                      <option value=0>Tdk Ada</option>
+                    </select>
+                    </center>
+
+                  </td>
+                  
+                  <td class="text-center">
+                    <center>
+                    <select class="form-control btn-primary" style="width:55%;border-radius:10px;text-align:center">
+                      <option value=1>Ok</option>
+                      <option value=0>Tdk Ok</option>
+                    </select>
+                    </center>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4.</td>
+                  <td>Berita Acara Pania Peneli Pelaksana Kontrak</td>
+                  <td>
+                    <center>
+                    <select class="form-control btn-primary" style="width:80%;border-radius:10px;text-align:center">
+                      <option value=1>Ada</option>
+                      <option value=0>Tdk Ada</option>
+                    </select>
+                    </center>
+
+                  </td>
+                  
+                  <td class="text-center">
+                    <center>
+                    <select class="form-control btn-primary" style="width:55%;border-radius:10px;text-align:center">
+                      <option value=1>Ok</option>
+                      <option value=0>Tdk Ok</option>
+                    </select>
+                    </center>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" style="text-align:">Kesimpulan</td>
+                  
+                  <td>
+                    <center> 
+                      <button class="btn-success" style="border-radius:10px;width:80%" disabled>Proses</button>
+                    </center>
+                  </td>
+                  <td>
+                    <center> 
+                      <button class="btn-success" style="border-radius:10px;width:55%" disabled>Proses</button>
+                    </center>
+                  </td>   
+                </tr>
+                <tr>
+                  <td colspan="4" style="text-align:center">
+                  <center>
+                    <button class="btn-primary" style="border-radius:10px;width:20%" >Submit</button>
+                    </center>
+                  </td>
+                  
+                </tr>
                 </tbody>
               </table>
-               <?php
-                $data_rows = $this->tempat_model->get_tempat_list($limit,$position)->num_rows();
-                $all_page  = ceil($data_rows/$limit);
-                ?>
-                <center>
-                <ul class="pagination">
-                    <li>
-                        <?php
-                            if($page > 1){
-                                $prev = $page-1;
-                                echo "<a href='".base_url()."Website/B_tempatbayar?page=$prev'>Previous</a>";
-                            }
-                        ?>
-                    </li>
-                    <li>
-                        <?php
-                            for($i=1;$i<=$all_page;$i++)
-                                if ($i != $page){
-                                    echo "<a href='".base_url()."Website/B_tempatbayar?page=$i'>$i</a>";
-                                }
-                        ?>
-                        </li>
-                        <li>
-                        <?php
-                            if($page < $all_page){
-                                $next=$page+1;
-                                echo "<a href='".base_url()."Website/B_tempatbayar?page=$next'>Next</a>";
-                            }
-                        ?>
-                    </li>
-                </ul>
-                </center>
+               
               </div>
               </div>
               </div>

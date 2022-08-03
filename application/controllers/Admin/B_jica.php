@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class B_tempatbayar extends CI_Controller {
+class B_jica extends CI_Controller {
 
 	function __construct()
   	{
@@ -65,7 +65,6 @@ class B_tempatbayar extends CI_Controller {
  		$access_groups = $check_access[0]->id_backend_groups;
 
         $groups_access = array(
-            '1',
             '2');
 
         if(!in_array($check_access[0]->id_backend_groups, $groups_access)){
@@ -85,9 +84,9 @@ class B_tempatbayar extends CI_Controller {
 
 		$navigation['users_active'] = 'active';
 
-		$data['title'] = "Tempat Bayar";
-		$data['brd_title_main'] = "Tempat Bayar";
-		$data['brd_title_url'] = site_url('Admin/B_tempatbayar');
+		$data['title'] = "Dashboard Admin 2";
+		$data['brd_title_main'] = "Dashboard Admin 2";
+		$data['brd_title_url'] = site_url('Admin/B_verifikasi');
 
 		$data['create_url'] = site_url('Admin/B_tempatbayar/create_tempat');
 		$data['filter_url'] = site_url('Admin/B_tempatbayar');
@@ -118,7 +117,7 @@ class B_tempatbayar extends CI_Controller {
 		$this->load->view('backend-web/partial/metadata');
 		$this->load->view('backend-web/partial/header', $header);
 		$this->load->view('backend-web/partial/navigation', $navigation);
-		$this->load->view('backend-web/root/tempat-list', $data);
+		$this->load->view('backend-web/root/jica', $data);
 		$this->load->view('backend-web/partial/footer');
 
 	}

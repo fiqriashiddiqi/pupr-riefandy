@@ -55,7 +55,7 @@
   <!-- End Page Loading -->
   <div id="login-page" class="row">
     <div id="default-validation" class="col s12 z-depth-4 card-panel" style="opacity:80%;border: 2px solid blue; border-radius: 27px;">    
-      <form class="login-form" action="<?php echo base_url(); ?>Auth/signin" method="post" enctype="multipart/form-data">
+      <form class="login-form" action="<?php echo site_url(); ?>Kontraktor/B_kontraktor/kontraktor1" method="post" enctype="multipart/form-data">
         <div class="row">
           <div class="input-field col s12 center">
             <img src="<?php echo base_url() ?>uploads/base-img/logo-pu.png" alt="" style="width: 65%;">
@@ -91,26 +91,17 @@ DIREKTORAT SUNGAI DAN PANTAI</p>
 
         <div class="row">
           <div class="input-field col s12">
-            <i class="mdi-communication-email prefix"></i>
-            <input id="username" name="users_username" type="email" class="validate" minlength="4" required="true">
-            <label for="username" data-error="Format Email Salah">Email</label>
+            <i class="mdi-social-person-outline prefix"></i>
+            <input id="username" name="users_username" type="text" class="validate" minlength="4" required="true">
+            <label for="username" data-error="Minimal 4 karakter">No Kontrak</label>
           </div>
         </div>
-        <div class="row">
-          <div class="input-field col s12">
-            <i class="mdi-action-lock-outline prefix"></i>
-            <input id="password" name="users_password" type="password" class="validate" minlength="8" required="true">
-            <label for="password" data-error="Minimal 8 karakter">Password</label>
-          </div>
-        </div>
+        
         <div class="row" style="margin-left:10%">
           <div class="input-field col">
-            <button type="submit" class="btn waves-effect waves-light col s12" style="background-color: blue;">Sign In</button>
+            <button type="submit" class="btn waves-effect waves-light col s12" style="background-color: blue;">Cek</button>
           </div>
-          <div class="input-field col">
-            <a href="<?php echo site_url('auth/signup') ?>" class="btn btn-primary" style="background-color: #0000ff;">Sign Up</a>
-            <!-- <button type="submit" class="btn waves-effect waves-light col s12" style="background-color: blue;">Sign Up</button> -->
-          </div>
+          
         </div>
         <!-- <div class="row">
           <div class="input-field col s12 m12 l12">
