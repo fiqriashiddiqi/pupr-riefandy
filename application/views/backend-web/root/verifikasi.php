@@ -79,6 +79,7 @@
                 <tr>
                   <th>No</th>
                   <th style="text-align: center;">Dokumen</th>
+                  <th style="text-align: center;">Download</th>
                   <th style="text-align: center;">Status</th>
                   <th width="180" style="text-align: center;">Keterangan</th>
                 </tr>
@@ -90,9 +91,14 @@
                   <td>Surat Pengajuan Permohonan Rekomendasi Teknis Perpanjangan Waktu</td>
                   <td>
                     <center>
+                      <a href="<?php echo base_url();?>uploads/file/1. Surat Pengajuan Permohonan Rekomendasi Teknis Perpanjangan Waktu.pdf" download><i class="icon fa fa-download "></i></a>
+                    </center>
+                  </td>
+                  <td>
+                    <center>
                     <select class="form-control btn-primary" style="width:80%;border-radius:10px;text-align:center">
-                      <option value=1>Ada</option>
-                      <option value=0>Tdk Ada</option>
+                      <option value=1>Lengkap</option>
+                      <option value=0>Tdk Lengkap</option>
                     </select>
                     </center>
 
@@ -112,9 +118,14 @@
                   <td>Explanatory Note</td>
                   <td>
                     <center>
+                      <a href="<?php echo base_url();?>uploads/file/2. Explanatory Note.pdf" download><i class="icon fa fa-download "></i></a>
+                    </center>
+                  </td>
+                  <td>
+                    <center>
                     <select class="form-control btn-primary" style="width:80%;border-radius:10px;text-align:center">
-                      <option value=1>Ada</option>
-                      <option value=0>Tdk Ada</option>
+                      <option value=1>Lengkap</option>
+                      <option value=0>Tdk Lengkap</option>
                     </select>
                     </center>
 
@@ -134,9 +145,14 @@
                   <td>Surat Perjanjian Kontrak</td>
                   <td>
                     <center>
+                      <a href="<?php echo base_url();?>uploads/file/3. Surat Perjanjian Kontrak.pdf" download><i class="icon fa fa-download "></i></a>
+                    </center>
+                  </td>
+                  <td>
+                    <center>
                     <select class="form-control btn-primary" style="width:80%;border-radius:10px;text-align:center">
-                      <option value=1>Ada</option>
-                      <option value=0>Tdk Ada</option>
+                      <option value=1>Lengkap</option>
+                      <option value=0>Tdk Lengkap</option>
                     </select>
                     </center>
 
@@ -156,9 +172,14 @@
                   <td>Berita Acara Pania Peneli Pelaksana Kontrak</td>
                   <td>
                     <center>
+                      <a href="<?php echo base_url();?>uploads/file/4. Berita Acara Panitia Peneliti Pelaksana Kontrak.pdf" download><i class="icon fa fa-download "></i></a>
+                    </center>
+                  </td>
+                  <td>
+                    <center>
                     <select class="form-control btn-primary" style="width:80%;border-radius:10px;text-align:center">
-                      <option value=1>Ada</option>
-                      <option value=0>Tdk Ada</option>
+                      <option value=1>Lengkap</option>
+                      <option value=0>Tdk Lengkap</option>
                     </select>
                     </center>
 
@@ -173,7 +194,7 @@
                     </center>
                   </td>
                 </tr>
-                <tr>
+                <!-- <tr>
                   <td colspan="2" style="text-align:">Kesimpulan</td>
                   
                   <td>
@@ -186,11 +207,11 @@
                       <button class="btn-success" style="border-radius:10px;width:55%" disabled>Proses</button>
                     </center>
                   </td>   
-                </tr>
+                </tr> -->
                 <tr>
-                  <td colspan="4" style="text-align:center">
+                  <td colspan="5" style="text-align:center">
                   <center>
-                    <button class="btn-primary" style="border-radius:10px;width:20%" >Submit</button>
+                    <button class="btn-primary" style="border-radius:10px;width:20%" id="" data-toggle="modal" data-target="#exampleModalCenter">Proses</button>
                     </center>
                   </td>
                   
@@ -210,6 +231,26 @@
     <!-- /.content -->
   </div>
 <!-- end content-wrapper -->
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="text-align:center">
+        <h1>Berhasil di Proses!</h1>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
 <script type="text/javascript">
   function loaddata(id_tempat_bayar)
   {

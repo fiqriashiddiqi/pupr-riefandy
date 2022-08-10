@@ -40,11 +40,32 @@
     margin-right: 18%;
     margin-bottom: 10px;
 ">
-            <button type="submit" class="btn waves-effect waves-light col s12 btn-success" >Submit</button>
+           
           </div>
 		  </div>
 	      </form>
+		  <button class="btn waves-effect waves-light col s12 btn-success" data-toggle="modal" data-target="#exampleModalCenter" style="margin-left:85%">Submit</button>
 	  </div>
 	</div>
   </section>
+</div>
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="text-align:center">
+        <h1>Berhasil di Proses!</h1>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
 </div>

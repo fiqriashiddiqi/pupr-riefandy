@@ -21,7 +21,7 @@ class B_rekomendasi extends CI_Controller {
 		$check_access = $this->auth_model->get_access($users_username, $users_password);
 
         $groups = array(
-            '3');
+            '2');
 
             if (!isset($users_username) && !isset($users_password) && !isset($users_access_status)){
                 $this->session->unset_userdata("users_username","users_password", "users_access_status");

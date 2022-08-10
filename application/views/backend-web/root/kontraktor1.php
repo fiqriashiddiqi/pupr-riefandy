@@ -1,5 +1,5 @@
 <?php date_default_timezone_set("Asia/Jakarta"); ?>
-<div class="content" style="margin-top:2%">
+<div class="content-wrapper" style="margin-top:2%;background-color:white">
   <section class="content-header">
   <div class="col-sm-1">
     <img src="<?php echo base_url();?>uploads/base-img/logo-pu.png" style="height: 99px; margin-top:20px" class="logo" alt="User Image">
@@ -18,7 +18,7 @@
 	<!-- <ol class="breadcrumb">
 	  <li class="active">
 		<a href="<?php echo $brd_title_url; ?>">
-		  <i class="fa fa-dashboard">
+		  <i class="fa fa-tasks">
 		  </i> 
 		  <?php echo $title; ?>
 		</a>

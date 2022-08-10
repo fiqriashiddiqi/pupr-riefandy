@@ -46,10 +46,10 @@
 			<label for="exampleInputFile" style="color:blue">1. Surat Pengajuan Permohonan Rekomendasi Teknis Perpanjangan Waktu
 			</label>
 			<div class="input-group" style="margin-bottom:-40px">
-				<input class=" form-control" type="text"/>
+				<input class=" form-control" type="text" id="exampleInputFile"/>
 				<div class="input-group-btn">
-					<label for="files" class="btn btn-primary" style="border-radius:3px">browse</label>
-					<input id="files" type="file" class="btn btn-default"  style="visibility:hidden;"/>
+					<label for="file" class="btn btn-primary" style="border-radius:3px">browse</label>
+					<input id="file" type="file" class="btn btn-default"  style="visibility:hidden;"/>
 				</div>
 			</div>
 		  </div>
@@ -76,7 +76,7 @@
 			</div>
 		  </div>
 		  <div class="form-group" style="margin-left:15px;margin-top:10px">
-			<label for="exampleInputFile" style="color:blue">4. Berita Acara Pania Peneli Pelaksana Kontrak
+			<label for="exampleInputFile" style="color:blue">4. Berita Acara Panitia Peneliti Pelaksana Kontrak
 
 
 			</label>
@@ -105,3 +105,15 @@
 	</div>
   </section>
 </div>
+
+<script>
+	var fullPath = document.getElementById('file').value;
+	if (fullPath) {
+		var startIndex = (fullPath.indexOf('\\') >= 0 ? fullPath.lastIndexOf('\\') : fullPath.lastIndexOf('/'));
+		var filename = fullPath.substring(startIndex);
+		if (filename.indexOf('\\') === 0 || filename.indexOf('/') === 0) {
+			filename = filename.substring(1);
+		}
+		alert(filename);
+	}
+</script>

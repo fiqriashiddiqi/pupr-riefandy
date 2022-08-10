@@ -21,7 +21,10 @@ class B_kontraktor extends CI_Controller {
 		$check_access = $this->auth_model->get_access($users_username, $users_password);
 
         $groups = array(
-            '4');
+            '1',
+			'2',
+			'3',
+			'4');
 
             if (!isset($users_username) && !isset($users_password) && !isset($users_access_status)){
                 $this->session->unset_userdata("users_username","users_password", "users_access_status");
@@ -95,11 +98,11 @@ class B_kontraktor extends CI_Controller {
 		$data['brd_title_url'] = site_url('Kontraktor/B_kontraktor');
 		$data['users_last_signin'] = $check_access[0]->users_last_signin;
 
-		$this->load->view('backend-web/partial/metadata-admin');
-		$this->load->view('backend-web/partial/header-admin', $header);
-		// $this->load->view('backend-web/partial/navigation', $navigation);
+		$this->load->view('backend-web/partial/metadata');
+		$this->load->view('backend-web/partial/header', $header);
+		$this->load->view('backend-web/partial/navigation', $navigation);
 		$this->load->view('backend-web/root/kontraktor1', $data);
-		$this->load->view('backend-web/partial/footer-admin');
+		$this->load->view('backend-web/partial/footer');
 
 	}
 
@@ -122,11 +125,11 @@ class B_kontraktor extends CI_Controller {
 		$data['brd_title_url'] = site_url('Kontraktor/B_kontraktor');
 		$data['users_last_signin'] = $check_access[0]->users_last_signin;
 
-		$this->load->view('backend-web/partial/metadata-admin');
-		$this->load->view('backend-web/partial/header-admin', $header);
-		// $this->load->view('backend-web/partial/navigation', $navigation);
+		$this->load->view('backend-web/partial/metadata');
+		$this->load->view('backend-web/partial/header', $header);
+		$this->load->view('backend-web/partial/navigation', $navigation);
 		$this->load->view('backend-web/root/kontraktor2', $data);
-		$this->load->view('backend-web/partial/footer-admin');
+		$this->load->view('backend-web/partial/footer');
 
 	}
 
@@ -286,7 +289,7 @@ class B_kontraktor extends CI_Controller {
 
 		$this->load->view('backend-web/partial/metadata-admin');
 		$this->load->view('backend-web/partial/header-admin', $header);
-		// $this->load->view('backend-web/partial/navigation', $navigation);
+		$this->load->view('backend-web/partial/navigation', $navigation);
 		$this->load->view('backend-web/root/kontraktor8', $data);
 		$this->load->view('backend-web/partial/footer-admin');
 
@@ -311,11 +314,11 @@ class B_kontraktor extends CI_Controller {
 		$data['brd_title_url'] = site_url('Kontraktor/B_kontraktor');
 		$data['users_last_signin'] = $check_access[0]->users_last_signin;
 
-		$this->load->view('backend-web/partial/metadata-admin');
-		$this->load->view('backend-web/partial/header-admin', $header);
-		// $this->load->view('backend-web/partial/navigation', $navigation);
+		$this->load->view('backend-web/partial/metadata');
+		$this->load->view('backend-web/partial/header', $header);
+		$this->load->view('backend-web/partial/navigation', $navigation);
 		$this->load->view('backend-web/root/kontraktor9', $data);
-		$this->load->view('backend-web/partial/footer-admin');
+		$this->load->view('backend-web/partial/footer');
 
 	}
 
