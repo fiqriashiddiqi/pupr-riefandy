@@ -7,7 +7,7 @@
       VERIFIKASI PERSETUJUAN REKOMENDASI TEKNIS PERPANJANGAN WAKTU
         <small></small>
       </h1>
-      <p>Proyek Test 1<br>04/08/2022</p>
+      <p>The River Improvement and Sediment Control in Bangga River (JICA Loan IP-580)<br><?php echo date("d-m-Y");?></p>
       
     </section>
 
@@ -169,7 +169,7 @@
                 </tr>
                 <tr>
                   <td>4.</td>
-                  <td>Berita Acara Pania Peneli Pelaksana Kontrak</td>
+                  <td>Berita Acara Panitia Peneliti Pelaksana Kontrak</td>
                   <td>
                     <center>
                       <a href="<?php echo base_url();?>uploads/file/4. Berita Acara Panitia Peneliti Pelaksana Kontrak.pdf" download><i class="icon fa fa-download "></i></a>
@@ -242,7 +242,8 @@
         </button>
       </div>
       <div class="modal-body" style="text-align:center">
-        <h1>Berhasil di Proses!</h1>
+        <h1 style="color:green">Berhasil di Proses!</h1>
+        <i class="icon fa fa-check" style="font-size:90px;color:green"></i>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

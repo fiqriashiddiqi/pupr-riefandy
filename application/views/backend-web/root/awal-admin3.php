@@ -11,7 +11,7 @@
 	  <small>
 	  </small>
 	</h1>
-    <p>Proyek Test 1<br>04/08/2022</p>
+    <p>The River Improvement and Sediment Control in Bangga River (JICA Loan IP-580)<br><?php echo date("d-m-Y");?></p>
   </div>
   
 	
@@ -45,7 +45,7 @@
           <div class="col-sm-4 card-panel" style="text-align:center;">
           <img src="<?php echo base_url();?>uploads/base-img/globe.png" style="width: 30%; " class="logo" alt="User Image">
             <p>
-                <a href="<?php echo site_url('Admin/B_nota') ?>" id="info" class="btn btn-primary btn-sm" style="font-size:20px;background-color:#0000ff">Wilayah III</a>
+                <a href="<?php echo site_url('Admin/B_permohonan') ?>" id="info" class="btn btn-primary btn-sm" style="font-size:20px;background-color:#0000ff">Wilayah III</a>
             </p>
 			
 		  </div>

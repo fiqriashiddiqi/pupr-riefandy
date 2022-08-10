@@ -11,7 +11,7 @@
 	  <small>
 	  </small>
 	</h1>
-    <p>Proyek Test 1<br>04/08/2022</p>
+    <p>The River Improvement and Sediment Control in Bangga River (JICA Loan IP-580)<br><?php echo date("d-m-Y");?></p>
   </div>
   
 	

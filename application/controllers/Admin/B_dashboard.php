@@ -68,7 +68,7 @@ class B_dashboard extends CI_Controller {
 		$navigation['access_groups'] = $access_groups;
 		$navigation['menus'] = $this->groups_model->groups_rules();
 
-		$data['title'] = "Dashboard Admin";
+		$data['title'] = "Pengajuan Rekomendasi Teknis Perpanjangan Waktu";
 		$data['brd_title_url'] = site_url('Admin/B_dashboard');
 		$data['users_last_signin'] = $check_access[0]->users_last_signin;
 

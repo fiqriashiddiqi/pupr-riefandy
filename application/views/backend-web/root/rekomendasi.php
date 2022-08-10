@@ -6,23 +6,17 @@
 	  <small>
 	  </small>
 	</h1>
-	<p>Proyek Test 1<br>04/08/2022</p>
+	<p>The River Improvement and Sediment Control in Bangga River (JICA Loan IP-580)<br><?php echo date("d-m-Y");?></p>
   </section>
   <section class="content">
 	<div class="panel-body" >
 	  
 	  <div class="box">
 		  <form>
-		  <div class="form-group" style="margin-left:15px;margin-top:10px">
+		  <div class="form-group" style="margin-left:15px;margin-top:10px;width:94%">
 			<label for="exampleInputFile" style="color:blue">1. Rekomendasi Teknis Perpanjangan Waktu
 			</label>
-			<div class="input-group" style="margin-bottom:-40px">
-				<input class=" form-control" type="text"/>
-				<div class="input-group-btn">
-					<label for="files" class="btn btn-primary" style="border-radius:3px">browse</label>
-					<input id="files" type="file" class="btn btn-default"  style="visibility:hidden;"/>
-				</div>
-			</div>
+			<input type="file" name="file" id="file_A" style=""/>
 		  </div>
 		  
 		  
@@ -51,7 +45,8 @@
         </button>
       </div>
       <div class="modal-body" style="text-align:center">
-        <h1>Berhasil di Proses!</h1>
+	  <h1 style="color:green">Berhasil di Proses!</h1>
+        <i class="icon fa fa-check" style="font-size:90px;color:green"></i>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

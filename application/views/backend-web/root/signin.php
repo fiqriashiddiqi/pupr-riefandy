@@ -53,8 +53,22 @@
       <div class="loader-section section-right"></div>
   </div>
   <!-- End Page Loading -->
-  <div id="login-page" class="row">
-    <div id="default-validation" class="col s12 z-depth-4 card-panel" style="opacity:80%;border: 2px solid blue; border-radius: 27px;">    
+  <div id="" class="row">
+  <div id="default-validation" class="col s6 z-depth-4 card-panel" style="opacity:80%;border: 2px solid blue; border-radius: 27px;margin:20px;margin-left:68px">    
+      <form class="login-form" action="" method="post" enctype="multipart/form-data" style="width:100%">
+        <div class="row">
+          <div class="input-field col s12 center">
+            <img src="<?php echo base_url() ?>uploads/base-img/pic2.jpeg" alt="" style="width: 70%;">
+            
+          </div>
+        </div>
+
+        
+
+      </form>
+      
+    </div>
+    <div id="default-validation" class="col s4 z-depth-4 card-panel" style="opacity:80%;border: 2px solid blue; border-radius: 27px;margin-top:20px;margin-left:84px;width:22%">    
       <form class="login-form" action="<?php echo base_url(); ?>Auth/signin" method="post" enctype="multipart/form-data">
         <div class="row">
           <div class="input-field col s12 center">
