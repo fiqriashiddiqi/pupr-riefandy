@@ -2,7 +2,7 @@
 <div class="content-wrapper" style="margin-top:2%;background-color:white">
   <section class="content-header">
   <div class="col-sm-1">
-    <img src="<?php echo base_url();?>uploads/base-img/logo-pu.png" style="height: 99px; margin-top:20px" class="logo" alt="User Image">
+    <img src="<?php echo base_url();?>uploads/base-img/logo-pu.png" style="height: 99px; margin-top:20px;margin-left:-24px" class="logo" alt="User Image">
   </div>
   
   <div class="col-sm-11">
