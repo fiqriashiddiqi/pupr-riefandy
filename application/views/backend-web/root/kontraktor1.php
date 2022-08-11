@@ -47,7 +47,8 @@
 			
 		  </div>
           <div class="col-sm-2 card-panel" style="text-align:center;">
-          <img src="<?php echo base_url();?>uploads/base-img/p2.png" style="width: 60%; " class="logo" alt="User Image">
+          <!-- <p><i class="fa fa-check" style="color:green;font-size:35px"></i></p>  -->
+          <img src="<?php echo base_url();?>uploads/base-img/p2.png" style="width: 60%; " class="logo" alt="User Image" >
             <p>
                 Direktorat Sistem dan Strategi Pengelolaan Sumber Daya Air
             </p>
@@ -103,6 +104,14 @@
 		  
 	  </div>
 	</div>
-    <a href="<?php echo site_url(); ?>Kontraktor/B_kontraktor/kontraktor2">bypass</a>
+    <p>
+      <h2>Keterangan : </h2>
+      
+      <i class="fa fa-circle" style="color:red"></i> Not Yet (Dokumen belum di proses)
+      <br>
+      <i class="fa fa-circle" style="color:yellow"></i> Proceed (Dokumen sedang di proses)
+      <br>
+      <i class="fa fa-circle" style="color:green"></i> Done/Qualified (Dokumen telah di proses dan memenuhi syarat)
+    </p>
   </section>
 </div>

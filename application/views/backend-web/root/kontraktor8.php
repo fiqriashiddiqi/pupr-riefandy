@@ -103,6 +103,14 @@
 		  
 	  </div>
 	</div>
-    <a href="<?php echo site_url(); ?>Kontraktor/B_kontraktor/kontraktor9">bypass</a>
+  <p>
+      <h2>Keterangan : </h2>
+      
+      <i class="fa fa-circle" style="color:red"></i> Not Yet (Dokumen belum di proses)
+      <br>
+      <i class="fa fa-circle" style="color:yellow"></i> Proceed (Dokumen sedang di proses)
+      <br>
+      <i class="fa fa-circle" style="color:green"></i> Done/Qualified (Dokumen telah di proses dan memenuhi syarat)
+    </p>
   </section>
 </div>
